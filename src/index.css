@@ -1,0 +1,548 @@
+/* ===========================================================================
+   Art portfolio — editorial minimalist theme
+   Colours & type live in the :root variables below; change them in one place.
+   =========================================================================== */
+
+:root {
+  --paper: #f6f4ef;
+  --paper-2: #efece5;
+  --ink: #1c1a17;
+  --muted: #8b857a;
+  --line: #dcd8cf;
+  --accent: #1c1a17;
+  --backdrop: rgba(20, 18, 16, 0.94);
+
+  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 1500px;
+  --pad: clamp(1.25rem, 5vw, 4rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* -------------------------------------------------------------- Nav */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.6rem var(--pad);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(1.2) blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav__brand {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.nav__links {
+  display: flex;
+  gap: clamp(1.2rem, 3vw, 2.8rem);
+}
+
+.nav__link {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.nav__link:hover {
+  color: var(--ink);
+}
+
+.nav__link.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* -------------------------------------------------------------- Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  justify-content: center;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(1.75rem, 4vw, 3rem);
+}
+
+.filters__btn {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.2rem 0;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.filters__btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: var(--ink);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.filters__btn:hover {
+  color: var(--ink);
+}
+
+.filters__btn.is-active {
+  color: var(--ink);
+}
+
+.filters__btn.is-active::after {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------- Gallery grid
+   Masonry via CSS columns keeps every painting's true aspect ratio. */
+.grid {
+  column-count: 3;
+  column-gap: clamp(0.75rem, 2vw, 1.75rem);
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    column-count: 1;
+  }
+}
+
+.tile {
+  margin: 0 0 clamp(0.75rem, 2vw, 1.75rem);
+  break-inside: avoid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.tile__img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.5s;
+}
+
+.tile:hover .tile__img {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+
+.tile__cap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 1.25rem 1.1rem;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(15, 13, 11, 0.72),
+    rgba(15, 13, 11, 0)
+  );
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.tile:hover .tile__cap {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tile__title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.tile__year {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* -------------------------------------------------------------- Lightbox */
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: var(--backdrop);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 5vw, 4rem);
+  animation: lb-fade 0.3s ease;
+}
+
+@keyframes lb-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.lb__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+/* Takes whatever vertical space is left after the caption, so the caption
+   (title + meta + description) is always fully on screen. */
+.lb__imgwrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb__img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  animation: lb-rise 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes lb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.99);
+  }
+}
+
+.lb__caption {
+  flex: 0 0 auto;
+  color: #f2efe9;
+  text-align: center;
+  margin-top: 1.4rem;
+  max-width: 46rem;
+}
+
+.lb__title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  margin: 0;
+}
+
+.lb__meta {
+  margin: 0.4rem 0 0;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(242, 239, 233, 0.6);
+}
+
+.lb__desc {
+  margin: 0.9rem auto 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(242, 239, 233, 0.85);
+}
+
+.lb__close,
+.lb__nav {
+  position: absolute;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.25s, transform 0.25s;
+  line-height: 1;
+}
+
+.lb__close {
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2.5rem);
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+.lb__close:hover {
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.lb__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 1rem;
+}
+
+.lb__nav:hover {
+  color: #fff;
+}
+
+.lb__nav--prev {
+  left: clamp(0.25rem, 2vw, 1.5rem);
+}
+
+.lb__nav--next {
+  right: clamp(0.25rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 640px) {
+  .lb__nav {
+    font-size: 2rem;
+  }
+}
+
+/* -------------------------------------------------------------- Section head */
+.section-head {
+  text-align: center;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
+}
+
+.section-head__title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  margin: 0;
+}
+
+.section-head__sub {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* -------------------------------------------------------------- Calendars */
+.calyear {
+  padding-bottom: clamp(3rem, 7vw, 5.5rem);
+}
+
+.calyear__head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.calyear__year {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+  line-height: 1;
+}
+
+.calyear__sub {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.calgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .calgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .calgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.calcell {
+  margin: 0;
+  cursor: pointer;
+}
+
+.calcell__frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.calcell__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.5s;
+}
+
+.calcell:hover .calcell__img {
+  transform: scale(1.05);
+  filter: brightness(0.94);
+}
+
+.calcell__empty {
+  width: 100%;
+  height: 100%;
+}
+
+.calcell__month {
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* -------------------------------------------------------------- About */
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__portrait img {
+  width: 100%;
+  height: auto;
+  background: var(--paper-2);
+}
+
+.about__name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 0.3rem;
+}
+
+.about__tagline {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+}
+
+.about__para {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  margin: 0 0 1.2rem;
+  color: #33302b;
+}
+
+.about__email {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.25s;
+}
+
+.about__email:hover {
+  border-color: var(--ink);
+}
+
+/* -------------------------------------------------------------- Footer */
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem var(--pad);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
