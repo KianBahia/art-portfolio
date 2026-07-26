@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Nav from './components/Nav.jsx';
 import Gallery from './components/Gallery.jsx';
 import Calendars from './components/Calendars.jsx';
@@ -54,6 +55,7 @@ export default function App() {
           © {new Date().getFullYear()} {artist.name}
         </span>
       </footer>
+      <Analytics />
     </div>
   );
 }
