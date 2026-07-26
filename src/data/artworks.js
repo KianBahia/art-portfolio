@@ -18,19 +18,6 @@
 export const artworks = [
 
   {
-    id: "10-october-2",
-    title: "Tall Wall Hanging Abstract",
-    image: "1. Paintings/10. October (2).jpg",
-    category: "Abstract"
-  },
-  {
-    id: "1960s-girl-reading-painted-in-hillah-in-the-60s",
-    title: "1960s Girl reading",
-    image: "1. Paintings/1960s  Girl reading (painted in Hillah in the 60s).jpg",
-    category: "Portrait",
-    description: "Painted in Hillah in the 60s",
-  },
-  {
     id: "1970s-seascape-dubai",
     title: "1970s Seascape Dubai",
     image: "1. Paintings/1970s Seascape Dubai.jpg",
@@ -42,13 +29,6 @@ export const artworks = [
     year: 2004,
     image: "1. Paintings/2004 Green Painting.jpg",
     category: "Abstract",
-  },
-  {
-    id: "2004-isam-s-sketch-of-degas-little-dancer",
-    title: "Isam's sketch of Degas' Little Dancer",
-    year: 2004,
-    image: "1. Paintings/2004 Isam's sketch of Degas' Little Dancer.jpg",
-    category: ["Sketch", "Impressionist"], 
   },
   {
     id: "2004-the-carpet-seller",
@@ -171,7 +151,7 @@ export const artworks = [
   },
   {
     id: "2009-bridge-at-wasdale",
-    title: "Bridge at Wasdale",
+    title: "Old Bridge, Wasdale",
     year: 2009,
     image: "1. Paintings/2009 Bridge at Wasdale.jpg",
     category: ["Impressionist", "Landscape"],
@@ -227,13 +207,6 @@ export const artworks = [
     category: ["Impressionist", "Landscape"],
   },
   {
-    id: "2010-fishing-lake",
-    title: "Fishing Lake",
-    year: 2010,
-    image: "1. Paintings/2010 Fishing Lake.jpg",
-    category: ["Impressionist", "Landscape"],
-  }, 
-  {
     id: "2010-near-windermere",
     title: "Near Windermere",
     year: 2010,
@@ -267,6 +240,13 @@ export const artworks = [
     year: 2010,
     image: "1. Paintings/2010 Road to Lancaster.JPG",
     category: ["Impressionist", "Landscape"],
+  },
+   {
+    id: "1960s-girl-reading-painted-in-hillah-in-the-60s",
+    title: "1960s Girl reading",
+    image: "1. Paintings/1960s  Girl reading (painted in Hillah in the 60s).jpg",
+    category: "Portrait",
+    description: "Painted in Hillah in the 60s",
   },
   {
     id: "2010-summer-s-reflections",
@@ -421,13 +401,6 @@ export const artworks = [
     year: 2011,
     image: "1. Paintings/2011 Primroses (1).JPG",
     category: ["Impressionist", "Still Life"],
-  },
-  {
-    id: "2011-river-bank",
-    title: "River Bank",
-    year: 2011,
-    image: "1. Paintings/2011 River Bank.JPG",
-    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2011-rose-arrangement",
@@ -858,6 +831,13 @@ export const artworks = [
     category: ["Impressionist", "Landscape"],
   },
   {
+    id: "2004-isam-s-sketch-of-degas-little-dancer",
+    title: "Isam's sketch of Degas' Little Dancer",
+    year: 2004,
+    image: "1. Paintings/2004 Isam's sketch of Degas' Little Dancer.jpg",
+    category: ["Sketch", "Impressionist"], 
+  },
+  {
     id: "2015-bolton-by-bowland",
     title: "Bolton by Bowland",
     year: 2015,
@@ -996,13 +976,6 @@ export const artworks = [
     year: 2016,
     image: "1. Paintings/2016 Flanders Field, Belgium.jpg",
     category: ["Impressionist", "Landscape"],
-  },
-  {
-    id: "2016-flower-pots",
-    title: "Flower Pots",
-    year: 2016,
-    image: "1. Paintings/2016 Flower Pots.JPG",
-    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2016-signs-of-winter",
@@ -1433,7 +1406,7 @@ export const artworks = [
   },
   {
     id: "2021-daisies-watercolour",
-    title: "Daisies (Watercolour)",
+    title: "Summer Daisies",
     year: 2021,
     image: "1. Paintings/2021 Daisies (Watercolour).JPG",
     category: ["Impressionist", "Still Life"],
@@ -1461,7 +1434,7 @@ export const artworks = [
   },
   {
     id: "2021-frosty-trees",
-    title: "Frosty trees",
+    title: "Frozen Trees",
     year: 2021,
     image: "1. Paintings/2021 Frosty trees.jpg",
     category: ["Impressionist", "Landscape"],
@@ -1503,7 +1476,7 @@ export const artworks = [
   },
   {
     id: "2021-september-the-road-to-linthal",
-    title: "September The Road to Linthal",
+    title: "Last Light of Summer",
     year: 2021,
     image: "1. Paintings/2021 September The Road to Linthal.JPG",
     category: ["Impressionist", "Landscape"],
@@ -1678,14 +1651,14 @@ export const artworks = [
   },
   {
     id: "2023-flowers",
-    title: "Flowers",
+    title: "A friend's gift",
     year: 2023,
     image: "1. Paintings/2023 Flowers.jpg",
     category: ["Impressionist", "Still Life"],
   },
   {
     id: "2023-japanese-leaves",
-    title: "Japanese leaves",
+    title: "Spring Light",
     year: 2023,
     image: "1. Paintings/2023 Japanese leaves.jpg",
     category: ["Impressionist", "Still Life"],
@@ -1699,7 +1672,7 @@ export const artworks = [
   },
   {
     id: "2023-little-cottage-in-the-woods-linthal-switzerland-1",
-    title: "Little cottage in the woods, Linthal, Switzerland (1)",
+    title: "Little cottage in the woods, Linthal, Switzerland",
     year: 2023,
     image: "1. Paintings/2023 Little cottage in the woods, Linthal, Switzerland (1).jpg",
     category: ["Impressionist", "House"],
@@ -1762,7 +1735,7 @@ export const artworks = [
   },
   {
     id: "2023-05-yellow-field-on-the-road-to-edinburgh-from-linlithgow-2",
-    title: "Yellow field on the road to Edinburgh from Linlithgow",
+    title: "Yellow field near Linlithgow",
     year: 2023,
     image: "1. Paintings/2023.05. Yellow field on the road to Edinburgh from Linlithgow. 2.JPG",
     category: ["Impressionist", "Landscape"]
@@ -1782,6 +1755,12 @@ export const artworks = [
     category: ["Impressionist", "Landscape"]
   },
   {
+    id: "10-october-2",
+    title: "Tall Wall Hanging Abstract",
+    image: "1. Paintings/10. October (2).jpg",
+    category: "Abstract"
+  },
+  {
     id: "2024-daffodils-at-the-gate",
     title: "Daffodils at the gate",
     year: 2024,
@@ -1797,21 +1776,21 @@ export const artworks = [
   },
   {
     id: "2024-fishermen-on-linlithgow-loch",
-    title: "Fishermen on Linlithgow Loch",
+    title: "Fishing on Linlithgow Loch",
     year: 2024,
     image: "1. Paintings/2024 Fishermen on Linlithgow Loch.jpg",
     category: ["Impressionist", "Landscape"]
   },
   {
     id: "2024-incoming-tide",
-    title: "Incoming Tide",
+    title: "Rising tide in the harbour",
     year: 2024,
     image: "1. Paintings/2024 Incoming Tide.jpg",
     category: ["Impressionist", "Landscape"]
   },
   {
     id: "2024-linth-valley",
-    title: "Linth Valley",
+    title: "Glarnerland Valley",
     year: 2024,
     image: "1. Paintings/2024 Linth Valley.JPG",
     category: ["Impressionist", "Landscape"]
@@ -1825,7 +1804,7 @@ export const artworks = [
   },
   {
     id: "2024-september-glarus-station",
-    title: "September Glarus Station",
+    title: "Glarus Railway Station",
     year: 2024,
     image: "1. Paintings/2024 September Glarus Station.jpg",
     category: ["Impressionist", "Landscape"]
@@ -1839,7 +1818,7 @@ export const artworks = [
   },
   {
     id: "2024-still-life-with-pineapple",
-    title: "Still life with pineapple",
+    title: "Still life with fruit and pot",
     year: 2024,
     image: "1. Paintings/2024 Still life with pineapple.jpg",
     category: ["Impressionist", "Still Life"]
@@ -1853,14 +1832,14 @@ export const artworks = [
   },
   {
     id: "2024-02-blossom-and-chimney-edinburgh",
-    title: "Blossom and Chimney Edinburgh",
+    title: "Global Warming",
     year: 2024,
     image: "1. Paintings/2024.02 Blossom and Chimney Edinburgh.jpg",
     category: "Impressionist",
   },
   {
     id: "2025-edin-night",
-    title: "Edinburgh night",
+    title: "Off to the Festivities",
     year: 2025,
     image: "1. Paintings/2025 Edin. night).jpg",
     category: ["Impressionist", "City"],
@@ -1881,7 +1860,7 @@ export const artworks = [
   },
   {
     id: "2025-seagulls",
-    title: "Seagulls",
+    title: "Conversation",
     year: 2025,
     image: "1. Paintings/2025 Seagulls.jpg",
     category: ["Impressionist", "Animals"]
@@ -1895,7 +1874,7 @@ export const artworks = [
   },
   {
     id: "2025-still-life",
-    title: "Still Life",
+    title: "Birthday Gifts",
     year: 2025,
     image: "1. Paintings/2025 Still Life.jpg",
     category: ["Impressionist", "Still Life"]

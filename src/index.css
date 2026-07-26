@@ -4,8 +4,8 @@
    =========================================================================== */
 
 :root {
-  --paper: #f6f4ef;
-  --paper-2: #efece5;
+  --paper: #fcfbf9;
+  --paper-2: #f1efea;
   --ink: #1c1a17;
   --muted: #8b857a;
   --line: #dcd8cf;
@@ -162,29 +162,67 @@ a {
   width: 100%;
 }
 
+/* -------------------------------------------------------------- Search */
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.searchbar__input {
+  width: min(420px, 90%);
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 0.55rem 0.4rem;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-align: center;
+  transition: border-color 0.25s;
+}
+
+.searchbar__input::placeholder {
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.searchbar__input:focus {
+  outline: none;
+  border-bottom-color: var(--ink);
+}
+
+.gallery__empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 3rem 0 5rem;
+  font-size: 0.95rem;
+}
+
 /* -------------------------------------------------------------- Gallery grid
-   Masonry via CSS columns keeps every painting's true aspect ratio. */
+   Masonry as flex columns: the sorted list is dealt across columns in reading
+   order (left-to-right per row) while each tile keeps its true aspect ratio. */
 .grid {
-  column-count: 3;
-  column-gap: clamp(0.75rem, 2vw, 1.75rem);
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 2vw, 1.75rem);
   padding-bottom: 5rem;
 }
 
-@media (max-width: 900px) {
-  .grid {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 560px) {
-  .grid {
-    column-count: 1;
-  }
+.grid__col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1.75rem);
 }
 
 .tile {
-  margin: 0 0 clamp(0.75rem, 2vw, 1.75rem);
-  break-inside: avoid;
+  margin: 0;
   position: relative;
   cursor: pointer;
   overflow: hidden;

@@ -30,9 +30,6 @@ export default function Calendars() {
     <section className="calendars">
       <header className="section-head">
         <h1 className="section-head__title">Calendars</h1>
-        <p className="section-head__sub">
-          Each year, twelve favourite paintings — one for every month.
-        </p>
       </header>
 
       {years.map((cal) => (
