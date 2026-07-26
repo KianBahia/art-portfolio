@@ -12,8 +12,8 @@
   --accent: #1c1a17;
   --backdrop: rgba(20, 18, 16, 0.94);
 
-  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --measure: 1500px;
   --pad: clamp(1.25rem, 5vw, 4rem);
@@ -40,6 +40,10 @@ body {
 img {
   display: block;
   max-width: 100%;
+  /* Casual-save deterrent: no drag-to-desktop, no long-press save. */
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 a {
@@ -95,7 +99,9 @@ a {
   color: var(--muted);
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
-  transition: color 0.25s, border-color 0.25s;
+  transition:
+    color 0.25s,
+    border-color 0.25s;
 }
 
 .nav__link:hover {
@@ -133,7 +139,7 @@ a {
 }
 
 .filters__btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -4px;
@@ -188,7 +194,11 @@ a {
 .tile__img {
   width: 100%;
   height: auto;
-  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+  /* With the width/height attributes on the <img>, the browser reserves the
+     correct space from the aspect ratio before the image loads → no reflow. */
+  display: block;
+  transition:
+    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 0.5s;
 }
 
@@ -215,7 +225,9 @@ a {
   );
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.4s, transform 0.4s;
+  transition:
+    opacity 0.4s,
+    transform 0.4s;
 }
 
 .tile:hover .tile__cap {
@@ -331,7 +343,9 @@ a {
   border: none;
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
-  transition: color 0.25s, transform 0.25s;
+  transition:
+    color 0.25s,
+    transform 0.25s;
   line-height: 1;
 }
 
@@ -455,7 +469,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+  transition:
+    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 0.5s;
 }
 
@@ -509,15 +524,15 @@ a {
 }
 
 .about__tagline {
-  color: var(--muted);
-  font-size: 0.8rem;
+  color: #33302b;
+  font-size: 1.5rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   margin: 0 0 2rem;
 }
 
 .about__para {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   line-height: 1.85;
   margin: 0 0 1.2rem;
   color: #33302b;

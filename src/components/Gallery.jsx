@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { artworks } from '../data/artworks.js';
-import { getCategories, imgSrc } from '../data/helpers.js';
+import { getCategories, catsOf, imgSrc, getSize } from '../data/helpers.js';
 import Lightbox from './Lightbox.jsx';
 
 export default function Gallery() {
@@ -12,7 +12,7 @@ export default function Gallery() {
     () =>
       filter === 'All'
         ? artworks
-        : artworks.filter((a) => a.category === filter),
+        : artworks.filter((a) => catsOf(a).includes(filter)),
     [filter]
   );
 
@@ -37,7 +37,9 @@ export default function Gallery() {
       </div>
 
       <div className="grid">
-        {shown.map((art, i) => (
+        {shown.map((art, i) => {
+          const size = getSize(art.image);
+          return (
           <figure
             key={art.id}
             className="tile"
@@ -48,13 +50,16 @@ export default function Gallery() {
               src={imgSrc(art.image)}
               alt={art.title}
               loading="lazy"
+              width={size?.[0]}
+              height={size?.[1]}
             />
             <figcaption className="tile__cap">
               <span className="tile__title">{art.title}</span>
               <span className="tile__year">{art.year}</span>
             </figcaption>
           </figure>
-        ))}
+          );
+        })}
       </div>
 
       {openIndex !== null && (
