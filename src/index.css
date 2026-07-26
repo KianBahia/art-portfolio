@@ -593,9 +593,21 @@ a {
 .footer {
   border-top: 1px solid var(--line);
   padding: 2rem var(--pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
   text-align: center;
   color: var(--muted);
   font-size: 0.74rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.footer__note {
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.68rem;
+  max-width: 40rem;
+  opacity: 0.85;
 }

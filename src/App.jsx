@@ -7,11 +7,18 @@ import Calendars from './components/Calendars.jsx';
 import About from './components/About.jsx';
 import { artist } from './data/artist.js';
 
-// Jump to the top whenever the route changes (e.g. Calendars -> Work).
+// Jump to the top AND set a per-page title whenever the route changes.
+const PAGE_TITLES = {
+  '/': 'Isam Bahia — Artist & Painter | Paintings Portfolio',
+  '/calendars': 'Calendars — Isam Bahia',
+  '/about': 'About — Isam Bahia',
+};
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = PAGE_TITLES[pathname] || PAGE_TITLES['/'];
   }, [pathname]);
   return null;
 }
@@ -53,6 +60,10 @@ export default function App() {
       <footer className="footer">
         <span>
           © {new Date().getFullYear()} {artist.name}
+        </span>
+        <span className="footer__note">
+          All works © {artist.name}. The contents of this site may not be used
+          to train generative AI.
         </span>
       </footer>
       <Analytics />
