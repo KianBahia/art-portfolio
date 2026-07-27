@@ -1,7 +1,6 @@
 # Art Portfolio
 
-A minimalist React portfolio for showing paintings, yearly calendars, and an
-artist bio.
+React portfolio for showing paintings, calendars, and an artist bio.
 
 ## Running it
 
@@ -13,7 +12,7 @@ npm run build    # produce the deployable /dist folder
 
 ## Adding or changing art — the only files you touch
 
-Everything on the site is driven by three data files. You never edit React code.
+Everything on the site is driven by three data files.
 
 ### 1. A new painting → `src/data/artworks.js`
 
@@ -33,7 +32,7 @@ Everything on the site is driven by three data files. You never edit React code.
 }
 ```
 
-That's it — it shows up in the gallery, under its category filter, with a
+It shows up in the gallery, under its category filter, with a
 click-to-enlarge lightbox (title + details at the bottom).
 
 ### 2. A year's calendar → `src/data/calendars.js`
