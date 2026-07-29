@@ -548,6 +548,18 @@ a {
   }
 }
 
+/* Portrait stays gently in view while the (longer) bio scrolls beside it. */
+.about__portrait {
+  position: sticky;
+  top: 6rem;
+}
+
+@media (max-width: 760px) {
+  .about__portrait {
+    position: static;
+  }
+}
+
 .about__portrait img {
   width: 100%;
   height: auto;
@@ -570,15 +582,32 @@ a {
 }
 
 .about__para {
-  font-size: 1.1rem;
-  line-height: 1.85;
-  margin: 0 0 1.2rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin: 0 0 1.1rem;
   color: #33302b;
+}
+
+.about__subhead {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 2.2rem 0 0.7rem;
+}
+
+.about__contact {
+  margin: 2rem 0 0;
+}
+
+.about__contact-label {
+  display: block;
+  color: #33302b;
+  font-size: 1.02rem;
+  margin-bottom: 0.2rem;
 }
 
 .about__email {
   display: inline-block;
-  margin-top: 1rem;
   font-family: var(--serif);
   font-size: 1.3rem;
   border-bottom: 1px solid var(--line);

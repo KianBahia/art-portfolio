@@ -15,10 +15,23 @@ export default function About() {
             {para}
           </p>
         ))}
+        {artist.style && (
+          <>
+            <h2 className="about__subhead">Style</h2>
+            <p className="about__para">{artist.style}</p>
+          </>
+        )}
         {artist.email && (
-          <a className="about__email" href={`mailto:${artist.email}`}>
-            {artist.email}
-          </a>
+          <p className="about__contact">
+            {artist.contactLabel && (
+              <span className="about__contact-label">
+                {artist.contactLabel}
+              </span>
+            )}
+            <a className="about__email" href={`mailto:${artist.email}`}>
+              {artist.email}
+            </a>
+          </p>
         )}
       </div>
     </section>

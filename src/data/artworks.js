@@ -241,13 +241,6 @@ export const artworks = [
     image: "1. Paintings/2010 Road to Lancaster.JPG",
     category: ["Impressionist", "Landscape"],
   },
-   {
-    id: "1960s-girl-reading-painted-in-hillah-in-the-60s",
-    title: "1960s Girl reading",
-    image: "1. Paintings/1960s  Girl reading (painted in Hillah in the 60s).jpg",
-    category: "Portrait",
-    description: "Painted in Hillah in the 60s",
-  },
   {
     id: "2010-summer-s-reflections",
     title: "Summer's Reflections",
@@ -275,13 +268,6 @@ export const artworks = [
     year: 2011,
     image: "1. Paintings/2011 Arrival of Spring (1).JPG",
     category: ["Impressionist", "Still Life"],
-  },
-  {
-    id: "2011-arrival-of-spring-2",
-    title: "Arrival of Spring 2",
-    year: 2011,
-    image: "1. Paintings/2011 Arrival of Spring (2).jpg",
-    category: ["Impressionist", "Portrait"],
   },
   {
     id: "2011-barley",
