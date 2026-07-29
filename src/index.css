@@ -548,10 +548,12 @@ a {
   }
 }
 
-/* Portrait stays gently in view while the (longer) bio scrolls beside it. */
+/* Portrait travels down with the scroll (staying beside the text), parking a
+   comfortable distance below the sticky header rather than touching it. */
 .about__portrait {
   position: sticky;
-  top: 6rem;
+  top: 8.5rem;
+  align-self: start;
 }
 
 @media (max-width: 760px) {
