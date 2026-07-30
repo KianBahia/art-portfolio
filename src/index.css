@@ -584,7 +584,7 @@ a {
 }
 
 .about__para {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin: 0 0 1.1rem;
   color: #33302b;
@@ -604,7 +604,7 @@ a {
 .about__contact-label {
   display: block;
   color: #33302b;
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   margin-bottom: 0.2rem;
 }
 

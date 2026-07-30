@@ -18,9 +18,9 @@ export const artist = {
     "In 2003 he was elected Chairman of Blackburn (Lancashire) Artists’ Society, a position he held for 14 years. Since 2007 until the present time he has produced an annual calendar of some of his paintings, which are mainly given to charities and others to family and friends.",
     "In 2017 he moved to Scotland where he became involved in local art groups and participated in many exhibitions and gained many awards.",
     "His work is in private collections throughout the U.K., France, Germany, The Netherlands and Switzerland as well as Canada and the U.S.A. Recently he completed a commission of five large paintings for a local health establishment.",
-  ],
-  style:
     "Isam is influenced by impressionism, adding hard brush strokes. He has adopted that in his painting, concentrating on light and shade and developing it into his abstract paintings with the addition of the third dimension.",
+
+  ],
   contactLabel: "He may be contacted through his email:",
   email: "IsamBahiaArtist@outlook.com",
 };

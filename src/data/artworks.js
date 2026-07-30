@@ -16,54 +16,46 @@
 // ============================================================================
 
 export const artworks = [
-
+  {
+    id: "SawleyBesideTheChurchHall",
+    title: "Sawley Beside The Church Hall",
+    year: 2010,
+    image: "1. Paintings/SawleyBesideTheChurchHall.JPG",
+    category: ["Impressionist", "Sketch"],
+  },
+  {
+    id: "Clitheroe",
+    title: "Clitheroe",
+    year: 2010,
+    image: "1. Paintings/Clitheroe.JPG",
+    category: ["Impressionist", "Sketch"],
+  },
   {
     id: "1970s-seascape-dubai",
     title: "1970s Seascape Dubai",
     image: "1. Paintings/1970s Seascape Dubai.jpg",
-    category: ["Impressionist", "Landscape"]
-  },
-  {
-    id: "2004-green-painting",
-    title: "Green Painting",
-    year: 2004,
-    image: "1. Paintings/2004 Green Painting.jpg",
-    category: "Abstract",
-  },
-  {
-    id: "2004-the-carpet-seller",
-    title: "The Carpet Seller",
-    year: 2004,
-    image: "1. Paintings/2004 The Carpet Seller.jpg",
-    category: "Portrait",
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2005-put-on-disc-abstract-painted-in-dubai",
-    title: "(Put on disc) Abstract - painted in Dubai",
+    title: "Abstract",
     year: 2005,
     image: "1. Paintings/2005 (Put on disc) Abstract - painted in Dubai.jpg",
     category: "Abstract",
   },
   {
     id: "2006-painted-in-dubai-abstract",
-    title: "(Painted in Dubai) Abstract",
+    title: "Abstract",
     year: 2006,
     image: "1. Paintings/2006 (Painted in Dubai) Abstract.jpg",
     category: "Abstract",
-  },
-  {
-    id: "2007-king-william-street-blackburn",
-    title: "King William Street Blackburn",
-    year: 2007,
-    image: "1. Paintings/2007 King William Street Blackburn.jpg",
-    category: "Impressionist",
   },
   {
     id: "2007-misty-morning",
     title: "Misty morning",
     year: 2007,
     image: "1. Paintings/2007 Misty morning.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2008-a-walk-in-the-park",
@@ -76,7 +68,7 @@ export const artworks = [
     id: "2008-landrover-in-landscape",
     title: "Landrover in landscape",
     year: 2008,
-    image: "1. Paintings/2008 Landrover in landscape.jpg",
+    image: "1. Paintings/2008 Landrover in landscape.png",
     category: ["Impressionist", "Landscape"],
   },
   {
@@ -98,7 +90,7 @@ export const artworks = [
     title: "Samlesbury Hall",
     year: 2008,
     image: "1. Paintings/2008 Samlesbury Hall.jpg",
-    category: "Impressionist"
+    category: "Impressionist",
   },
   {
     id: "2008-still-life-with-apples",
@@ -164,14 +156,6 @@ export const artworks = [
     category: ["Impressionist", "Landscape"],
   },
   {
-    id: "2009-copy-of-a-painting-in-blackburn-museum",
-    title: "Blackburn Museum",
-    year: 2009,
-    image: "1. Paintings/2009 Copy of a Painting in Blackburn Museum.JPG",
-    category: "Impressionist",
-
-  },
-  {
     id: "2009-wastwater-lake-district",
     title: "Wastwater, Lake District",
     year: 2009,
@@ -181,15 +165,8 @@ export const artworks = [
   {
     id: "2009-wilpshire-sunset-3",
     title: "Boy Sitting",
-    year: 2009,
+    year: 1965,
     image: "1. Paintings/2009 Wilpshire Sunset  (3).JPG",
-    category: ["Impressionist", "Sketch"],
-  },
-  {
-    id: "2009-15-07-slaidburn",
-    title: "Slaidburn",
-    year: 2009,
-    image: "1. Paintings/2009.15.07. Slaidburn.JPG",
     category: ["Impressionist", "Sketch"],
   },
   {
@@ -212,13 +189,6 @@ export const artworks = [
     year: 2010,
     image: "1. Paintings/2010 Near Windermere.jpg",
     category: ["Impressionist", "Landscape"],
-  },
-  {
-    id: "2010-painting",
-    title: "Red Abstract",
-    year: 2010,
-    image: "1. Paintings/2010 Painting.JPG",
-    category: "Abstract",
   },
   {
     id: "2010-red-flower",
@@ -411,9 +381,9 @@ export const artworks = [
   },
   {
     id: "2011-swiss-village-dark-photo",
-    title: "Swiss village (dark photo)",
+    title: "Swiss village",
     year: 2011,
-    image: "1. Paintings/2011 Swiss village (dark photo).jpg",
+    image: "1. Paintings/2011 Swiss village (dark photo).png",
     category: ["Impressionist", "Landscape"],
   },
   {
@@ -460,7 +430,7 @@ export const artworks = [
   },
   {
     id: "2012-abstract",
-    title: "Abstract",
+    title: "The Matador",
     year: 2012,
     image: "1. Paintings/2012 Abstract.jpg",
     category: "Abstract",
@@ -488,7 +458,7 @@ export const artworks = [
   },
   {
     id: "2012-three-abstracts",
-    title: "Three Abstracts",
+    title: "Harmony",
     year: 2012,
     image: "1. Paintings/2012 Three Abstracts.jpg",
     category: "Abstract",
@@ -547,7 +517,7 @@ export const artworks = [
     title: "Garden artist",
     year: 2013,
     image: "1. Paintings/2013 Garden artist.jpg",
-    category: ["Impressionist", "Portrait"]
+    category: ["Impressionist", "Portrait"],
   },
   {
     id: "2013-linllithgow-palace",
@@ -582,7 +552,7 @@ export const artworks = [
     title: "Painting for a Dining Room",
     year: 2013,
     image: "1. Paintings/2013 Painting for a Dining Room.JPG",
-    category: ["Impressionist", "Still Life"]
+    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2013-pheasants-in-the-field",
@@ -659,7 +629,7 @@ export const artworks = [
     title: "Village view",
     year: 2013,
     image: "1. Paintings/2013 Village view.jpg",
-    category: "Impressionist", 
+    category: "Impressionist",
   },
   {
     id: "2013-wastwater",
@@ -673,13 +643,6 @@ export const artworks = [
     title: "White cheeked bulbul",
     year: 2013,
     image: "1. Paintings/2013 White cheeked bulbul.jpg",
-    category: ["Impressionist", "Animals"],
-  },
-  {
-    id: "2013-winter-swans",
-    title: "Winter swans",
-    year: 2013,
-    image: "1. Paintings/2013 Winter swans.jpg",
     category: ["Impressionist", "Animals"],
   },
   {
@@ -698,7 +661,7 @@ export const artworks = [
   },
   {
     id: "2014-abstract",
-    title: "Abstract",
+    title: "Flight of the Phoenix",
     year: 2014,
     image: "1. Paintings/2014 Abstract.JPG",
     category: "Abstract",
@@ -711,26 +674,11 @@ export const artworks = [
     category: ["Impressionist", "Portrait"],
   },
   {
-    id: "2014-dr-house-linlithgow",
-    title: "Linlithgow House",
-    year: 2014,
-    image: "1. Paintings/2014 Dr House, Linlithgow.JPG",
-    category: "Impressionist",
-
-  },
-  {
     id: "2014-edinburgh-rooftops",
     title: "Edinburgh Rooftops",
     year: 2014,
     image: "1. Paintings/2014 Edinburgh Rooftops.JPG",
     category: ["Impressionist", "Landscape"],
-  },
-  {
-    id: "2014-horse-and-rider",
-    title: "Horse and rider",
-    year: 2014,
-    image: "1. Paintings/2014 Horse and rider.JPG",
-    category: ["Impressionist", "Animals"],
   },
   {
     id: "2014-house-steps-and-doorway",
@@ -745,13 +693,6 @@ export const artworks = [
     year: 2014,
     image: "1. Paintings/2014 Pendle Fisheries.jpg",
     category: ["Impressionist", "Landscape"],
-  },
-  {
-    id: "2014-preparation-for-painting",
-    title: "Preparation for painting",
-    year: 2014,
-    image: "1. Paintings/2014 Preparation for painting.jpg",
-    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2014-ribchester-farm-house",
@@ -821,7 +762,7 @@ export const artworks = [
     title: "Isam's sketch of Degas' Little Dancer",
     year: 2004,
     image: "1. Paintings/2004 Isam's sketch of Degas' Little Dancer.jpg",
-    category: ["Sketch", "Impressionist"], 
+    category: ["Sketch", "Impressionist"],
   },
   {
     id: "2015-bolton-by-bowland",
@@ -829,13 +770,6 @@ export const artworks = [
     year: 2015,
     image: "1. Paintings/2015 'Bolton by Bowland.jpg",
     category: ["Impressionist", "House"],
-  },
-  {
-    id: "2015-canterbury",
-    title: "Canterbury",
-    year: 2015,
-    image: "1. Paintings/2015 'Canterbury'.jpg",
-    category: ["Impressionist", "City"],
   },
   {
     id: "2015-corfu",
@@ -987,7 +921,7 @@ export const artworks = [
   {
     id: "2017-autumn-in-king-william-st-blackburn",
     title: "Autumn in King William St Blackburn",
-    year: 2017,
+    year: 2007,
     image: "1. Paintings/2017 Autumn in King William St Blackburn.jpg",
     category: ["Impressionist", "City"],
   },
@@ -1044,7 +978,7 @@ export const artworks = [
     id: "2018-blue-vase-and-rosebuds",
     title: "Blue vase and rosebuds",
     year: 2018,
-    image: "1. Paintings/2018 Blue vase and rosebuds.JPG",  
+    image: "1. Paintings/2018 Blue vase and rosebuds.JPG",
     category: ["Impressionist", "Still Life"],
   },
   {
@@ -1192,7 +1126,7 @@ export const artworks = [
     title: "Preparing to Sail",
     year: 2019,
     image: "1. Paintings/2019 Preparing to Sail.jpeg",
-    category: "Impressionist", 
+    category: "Impressionist",
   },
   {
     id: "2019-storm-over-the-loch-water-colour",
@@ -1213,7 +1147,7 @@ export const artworks = [
     title: "Street Musicians, Princes Street, Edinburgh",
     year: 2019,
     image: "1. Paintings/2019 Street Musicians, Princes Street, Edinburgh.jpg",
-    category: "Impressionist", 
+    category: "Impressionist",
   },
   {
     id: "2019-swiss-valley",
@@ -1251,13 +1185,6 @@ export const artworks = [
     category: ["Impressionist", "House"],
   },
   {
-    id: "2019-winter-sun",
-    title: "Winter Sun",
-    year: 2019,
-    image: "1. Paintings/2019 Winter Sun.jpg",
-    category: ["Impressionist", "Landscape"],
-  },
-  {
     id: "2020-bridgeness-tower",
     title: "Bridgeness Tower",
     year: 2020,
@@ -1270,13 +1197,6 @@ export const artworks = [
     year: 2020,
     image: "1. Paintings/2020 'City at Night'.jpg",
     category: ["Impressionist", "City"],
-  },
-  {
-    id: "2020-a-house",
-    title: "A House",
-    year: 2020,
-    image: "1. Paintings/2020 A House.JPG",
-    category: ["Impressionist", "House"],
   },
   {
     id: "2020-blue-vase-and-flowers",
@@ -1293,24 +1213,10 @@ export const artworks = [
     category: ["Impressionist", "Landscape"],
   },
   {
-    id: "2020-flowers-and-blue-vase",
-    title: "Flowers and blue vase",
-    year: 2020,
-    image: "1. Paintings/2020 Flowers and blue vase.jpeg",
-    category: ["Impressionist", "Still Life"],
-  },
-  {
     id: "2020-princes-street-gardens-edinburgh",
     title: "Princes Street Gardens, Edinburgh",
     year: 2020,
     image: "1. Paintings/2020 Princes Street Gardens, Edinburgh.JPG",
-    category: ["Impressionist", "Landscape"],
-  },
-  {
-    id: "2020-sunlight",
-    title: "Sunlight",
-    year: 2020,
-    image: "1. Paintings/2020 Sunlight.JPG",
     category: ["Impressionist", "Landscape"],
   },
   {
@@ -1447,13 +1353,6 @@ export const artworks = [
     category: ["Impressionist", "Landscape"],
   },
   {
-    id: "2021-reclining-figure",
-    title: "Reclining Figure",
-    year: 2021,
-    image: "1. Paintings/2021 Reclining Figure.jpg",
-    category: ["Impressionist", "Portrait"],
-  },
-  {
     id: "2021-roses",
     title: "Roses",
     year: 2021,
@@ -1493,7 +1392,7 @@ export const artworks = [
     title: "The End of the Day Men standing",
     year: 2021,
     image: "1. Paintings/2021 The End of the Day Men standing.JPG",
-    category: "Impressionist", 
+    category: "Impressionist",
   },
   {
     id: "2021-the-meadows-in-bloom-edinburgh",
@@ -1541,7 +1440,8 @@ export const artworks = [
     id: "2021-11-the-weather-vane-weather-vane-removed-2022",
     title: "The Weather Vane",
     year: 2021,
-    image: "1. Paintings/2021.11 The Weather Vane (weather vane removed 2022).JPG",
+    image:
+      "1. Paintings/2021.11 The Weather Vane (weather vane removed 2022).JPG",
     category: ["Impressionist", "Landscape"],
   },
   {
@@ -1557,13 +1457,6 @@ export const artworks = [
     year: 2021,
     image: "1. Paintings/2021.12 The Jetty.jpg",
     category: "Impressionist",
-  },
-  {
-    id: "2022-a-house",
-    title: "A House",
-    year: 2022,
-    image: "1. Paintings/2022 A House.jpg",
-    category: ["Impressionist", "House"],
   },
   {
     id: "2022-daffodils",
@@ -1584,7 +1477,7 @@ export const artworks = [
     title: "Rising Moon",
     year: 2022,
     image: "1. Paintings/2022 Rising Moon.jpg",
-    category: "Impressionist"
+    category: "Impressionist",
   },
   {
     id: "2022-seestrasse-konstanz-switzerland",
@@ -1597,14 +1490,16 @@ export const artworks = [
     id: "2022-the-balmoral-hotel-edinburgh-during-the-festive-season",
     title: "The Balmoral Hotel, Edinburgh during the festive season",
     year: 2022,
-    image: "1. Paintings/2022 The Balmoral Hotel, Edinburgh during the festive season.jpg",
+    image:
+      "1. Paintings/2022 The Balmoral Hotel, Edinburgh during the festive season.jpg",
     category: ["Impressionist", "City"],
   },
   {
     id: "2022-urnerboden-the-way-to-the-klausen-pass-switzerland",
     title: "Urnerboden - the way to the Klausen Pass, Switzerland",
     year: 2022,
-    image: "1. Paintings/2022 Urnerboden - the way to the Klausen Pass, Switzerland.jpg",
+    image:
+      "1. Paintings/2022 Urnerboden - the way to the Klausen Pass, Switzerland.jpg",
     category: ["Impressionist", "Landscape"],
   },
   {
@@ -1625,15 +1520,9 @@ export const artworks = [
     id: "2023-kenji-at-beecraigs-country-park-linlithgow-scotland",
     title: "Kenji at Beecraigs Country Park",
     year: 2023,
-    image: "1. Paintings/2023 'Kenji' at Beecraigs Country Park, Linlithgow, Scotland.jpg",
-    category: ["Impressionist", "Animals"]
-  },
-  {
-    id: "2023-a-house",
-    title: "A House",
-    year: 2023,
-    image: "1. Paintings/2023 A House.JPG",
-    category: ["Impressionist", "House"],
+    image:
+      "1. Paintings/2023 'Kenji' at Beecraigs Country Park, Linlithgow, Scotland.jpg",
+    category: ["Impressionist", "Animals"],
   },
   {
     id: "2023-flowers",
@@ -1660,7 +1549,8 @@ export const artworks = [
     id: "2023-little-cottage-in-the-woods-linthal-switzerland-1",
     title: "Little cottage in the woods, Linthal, Switzerland",
     year: 2023,
-    image: "1. Paintings/2023 Little cottage in the woods, Linthal, Switzerland (1).jpg",
+    image:
+      "1. Paintings/2023 Little cottage in the woods, Linthal, Switzerland (1).jpg",
     category: ["Impressionist", "House"],
   },
   {
@@ -1723,98 +1613,100 @@ export const artworks = [
     id: "2023-05-yellow-field-on-the-road-to-edinburgh-from-linlithgow-2",
     title: "Yellow field near Linlithgow",
     year: 2023,
-    image: "1. Paintings/2023.05. Yellow field on the road to Edinburgh from Linlithgow. 2.JPG",
-    category: ["Impressionist", "Landscape"]
+    image:
+      "1. Paintings/2023.05. Yellow field on the road to Edinburgh from Linlithgow. 2.JPG",
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-a-walk-by-the-river-linth",
     title: "A walk by the River Linth",
     year: 2024,
     image: "1. Paintings/2024 A walk by the River Linth.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-culross-on-the-firth-of-forth",
     title: "Culross on the Firth of Forth",
     year: 2024,
     image: "1. Paintings/2024 Culross on the Firth of Forth.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "10-october-2",
     title: "Tall Wall Hanging Abstract",
     image: "1. Paintings/10. October (2).jpg",
-    category: "Abstract"
+    category: "Abstract",
   },
   {
     id: "2024-daffodils-at-the-gate",
     title: "Daffodils at the gate",
     year: 2024,
     image: "1. Paintings/2024 Daffodils at the gate.jpg",
-    category: "Impressionist"
+    category: "Impressionist",
   },
   {
     id: "2024-evening-light-on-the-royal-mile-edinburgh",
     title: "Evening light on the Royal Mile Edinburgh",
     year: 2024,
     image: "1. Paintings/2024 Evening light on the Royal Mile Edinburgh.jpg",
-    category: ["Impressionist", "City"]
+    category: ["Impressionist", "City"],
   },
   {
     id: "2024-fishermen-on-linlithgow-loch",
     title: "Fishing on Linlithgow Loch",
     year: 2024,
     image: "1. Paintings/2024 Fishermen on Linlithgow Loch.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-incoming-tide",
     title: "Rising tide in the harbour",
     year: 2024,
     image: "1. Paintings/2024 Incoming Tide.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-linth-valley",
     title: "Glarnerland Valley",
     year: 2024,
     image: "1. Paintings/2024 Linth Valley.JPG",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-march-edinburgh-skyline-from-princes-street-gardens-2",
     title: "Edinburgh Skyline from Princes Street Gardens",
     year: 2024,
-    image: "1. Paintings/2024 March - Edinburgh Skyline from Princes Street Gardens 2.jpg",
-    category: ["Impressionist", "City"]
+    image:
+      "1. Paintings/2024 March - Edinburgh Skyline from Princes Street Gardens 2.jpg",
+    category: ["Impressionist", "City"],
   },
   {
     id: "2024-september-glarus-station",
     title: "Glarus Railway Station",
     year: 2024,
     image: "1. Paintings/2024 September Glarus Station.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-spring-daffodils",
     title: "Spring daffodils",
     year: 2024,
     image: "1. Paintings/2024 Spring daffodils.jpg",
-    category: ["Impressionist", "Still Life"]
+    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2024-still-life-with-pineapple",
     title: "Still life with fruit and pot",
     year: 2024,
     image: "1. Paintings/2024 Still life with pineapple.jpg",
-    category: ["Impressionist", "Still Life"]
+    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2024-winter-sun",
     title: "Winter Sun",
     year: 2024,
     image: "1. Paintings/2024 Winter Sun.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2024-02-blossom-and-chimney-edinburgh",
@@ -1842,167 +1734,140 @@ export const artworks = [
     title: "RCSI",
     year: 2025,
     image: "1. Paintings/2025 RCSI.jpg",
-    category: ["Impressionist", "City"]
+    category: ["Impressionist", "City"],
   },
   {
     id: "2025-seagulls",
     title: "Conversation",
     year: 2025,
     image: "1. Paintings/2025 Seagulls.jpg",
-    category: ["Impressionist", "Animals"]
+    category: ["Impressionist", "Animals"],
   },
   {
     id: "2025-september",
     title: "September",
     year: 2025,
     image: "1. Paintings/2025 September.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2025-still-life",
     title: "Birthday Gifts",
     year: 2025,
     image: "1. Paintings/2025 Still Life.jpg",
-    category: ["Impressionist", "Still Life"]
+    category: ["Impressionist", "Still Life"],
   },
   {
     id: "2025-vintage-steamer",
     title: "Vintage Steamer",
     year: 2025,
     image: "1. Paintings/2025 Vintage Steamer.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2026-05-abstract-1",
     title: "Abstract 1",
     year: 2026,
     image: "1. Paintings/2026.05 Abstract 1.jpeg",
-    category: ["Impressionist", "Abstract"]
+    category: ["Impressionist", "Abstract"],
   },
   {
     id: "2026-05-abstract-woman",
     title: "Abstract Woman",
     year: 2026,
     image: "1. Paintings/2026.05 Abstract Woman.jpeg",
-    category: ["Impressionist", "Abstract"]
+    category: ["Impressionist", "Abstract"],
   },
   {
     id: "2026-05-abstract-2",
     title: "Abstract 2",
     year: 2026,
     image: "1. Paintings/2026.05. Abstract 2.jpeg",
-    category: ["Impressionist", "Abstract"]
+    category: ["Impressionist", "Abstract"],
   },
   {
     id: "2026-05-abstract-3",
     title: "Abstract 3",
     year: 2026,
     image: "1. Paintings/2026.05. Abstract 3.jpeg",
-    category: ["Impressionist", "Abstract"]
+    category: ["Impressionist", "Abstract"],
   },
   {
     id: "2026-05-forth-bridge-rain-clouds",
     title: "Forth Bridge rain clouds",
     year: 2026,
     image: "1. Paintings/2026.05. Forth Bridge rain clouds.jpeg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2026-05-ladybirds",
     title: "Ladybirds",
     year: 2026,
     image: "1. Paintings/2026.05. Ladybirds.jpeg",
-    category: ["Impressionist", "Animals"]
+    category: ["Impressionist", "Animals"],
   },
   {
     id: "arab-in-national-dress",
     title: "Arab in national dress",
     image: "1. Paintings/Arab in national dress.jpg",
-    category: ["Impressionist", "Portrait"]
-  },
-  {
-    id: "autumn-bouquet",
-    title: "Autumn bouquet",
-    image: "1. Paintings/Autumn bouquet.jpg",
-    category: ["Impressionist", "Still Life"]
+    category: ["Impressionist", "Portrait"],
   },
   {
     id: "black-winged-stilt",
     title: "Black-winged stilt",
     image: "1. Paintings/Black-winged stilt.jpg",
-    category: ["Impressionist", "Animals"]
+    category: ["Impressionist", "Animals"],
   },
   {
     id: "camel-rider-in-sandstorm",
     title: "Camel rider in sandstorm",
     image: "1. Paintings/Camel rider in sandstorm.jpg",
-    category: ["Impressionist", "Animals"]
+    category: ["Impressionist", "Animals"],
   },
   {
     id: "chipping-ribble-valley",
     title: "Chipping, Ribble Valley",
     image: "1. Paintings/Chipping, Ribble Valley.jpeg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "high-tide",
     title: "High Tide",
     image: "1. Paintings/High Tide.JPG",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "highmount-view",
     title: "Highmount view",
     image: "1. Paintings/Highmount view.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "mosaic-mural-in-senior-staff-lounge-al-wasl-hospital-dubai-u-a-e-maternity-hospital",
-    title: "Mosaic Mural in Senior Staff Lounge, Al Wasl Hospital, Dubai, U.A.E",
-    image: "1. Paintings/Mosaic Mural in Senior Staff Lounge, Al Wasl Hospital, Dubai, U.A.E. (Maternity Hospital).jpg",
-    category: ["Impressionist", "Landscape"]
-  },
-  {
-    id: "nude-rear-view",
-    title: "Nude - rear view",
-    image: "1. Paintings/Nude - rear view.jpg",
-    category: ["Impressionist", "Portrait"]
-  },
-  {
-    id: "nude-figure",
-    title: "Nude figure",
-    image: "1. Paintings/Nude figure.JPG",
-    category: ["Impressionist", "Portrait", "Sketch"]
+    title:
+      "Mosaic Mural in Senior Staff Lounge, Al Wasl Hospital, Dubai, U.A.E",
+    image:
+      "1. Paintings/Mosaic Mural in Senior Staff Lounge, Al Wasl Hospital, Dubai, U.A.E. (Maternity Hospital).jpg",
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "reflections",
     title: "Reflections",
+    year: 1985,
     image: "1. Paintings/Reflections.JPG",
-    category: ["Impressionist", "Portrait"]
+    category: ["Impressionist", "Portrait"],
   },
   {
     id: "ribble-valley-cottage",
     title: "Ribble Valley cottage",
     image: "1. Paintings/Ribble Valley cottage.jpg",
-    category: ["Impressionist", "House"]
+    category: ["Impressionist", "House"],
   },
   {
     id: "sally",
     title: "Sally",
     image: "1. Paintings/Sally.jpg",
-    category: ["Impressionist", "Portrait"]
-  },
-  {
-    id: "summer-bouquet",
-    title: "Summer bouquet",
-    image: "1. Paintings/Summer bouquet.jpg",
-    category: ["Impressionist", "Still Life"]
-  },
-  {
-    id: "swans",
-    title: "Swans",
-    image: "1. Paintings/Swans.JPG",
-    category: ["Impressionist", "Animals"]
+    category: ["Impressionist", "Portrait"],
   },
   {
     id: "the-spice-lounge",
@@ -2014,17 +1879,17 @@ export const artworks = [
     id: "thoughtful-man",
     title: "Thoughtful man",
     image: "1. Paintings/Thoughtful man.jpg",
-    category: ["Impressionist", "Portrait"]
+    category: ["Impressionist", "Portrait"],
   },
   {
     id: "unknown-location",
-    title: "Unknown location",
+    title: "Ribble Valley",
     image: "1. Paintings/Unknown location.jpg",
-    category: ["Impressionist", "Landscape"]
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "st-michael",
-    title: "st michael",
+    title: "St Michael Linlithgow",
     image: "1. Paintings/st michael.JPG",
     category: "Impressionist",
   },
