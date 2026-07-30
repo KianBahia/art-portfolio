@@ -436,13 +436,6 @@ export const artworks = [
     category: "Abstract",
   },
   {
-    id: "2012-from-the-wild",
-    title: "From the wild",
-    year: 2012,
-    image: "1. Paintings/2012 From the wild.JPG",
-    category: ["Impressionist", "Still Life"],
-  },
-  {
     id: "2012-misty-landscape",
     title: "Misty landscape",
     year: 2012,
@@ -672,13 +665,6 @@ export const artworks = [
     year: 2014,
     image: "1. Paintings/2014 Children in a Tree.jpg",
     category: ["Impressionist", "Portrait"],
-  },
-  {
-    id: "2014-edinburgh-rooftops",
-    title: "Edinburgh Rooftops",
-    year: 2014,
-    image: "1. Paintings/2014 Edinburgh Rooftops.JPG",
-    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2014-house-steps-and-doorway",
@@ -1382,7 +1368,7 @@ export const artworks = [
   },
   {
     id: "2021-sunrise-on-the-loch-2",
-    title: "Sunrise on the Loch (2)",
+    title: "Sunrise on the Loch",
     year: 2021,
     image: "1. Paintings/2021 Sunrise on the Loch (2).jpg",
     category: ["Impressionist", "Landscape"],
