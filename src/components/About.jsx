@@ -15,12 +15,12 @@ export default function About() {
             {para}
           </p>
         ))}
-        {artist.style && (
-          <>
-            <h2 className="about__subhead">Style</h2>
-            <p className="about__para">{artist.style}</p>
-          </>
-        )}
+        {artist.sections?.map((section, i) => (
+          <div key={i}>
+            <h2 className="about__subhead">{section.heading}</h2>
+            <p className="about__para">{section.body}</p>
+          </div>
+        ))}
         {artist.email && (
           <p className="about__contact">
             {artist.contactLabel && (

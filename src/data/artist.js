@@ -3,7 +3,8 @@
 // ============================================================================
 //  portrait: filename inside public/artwork/  (or public/ — see about page)
 //  bio:      a list of paragraphs (add/remove freely)
-//  style:    a short note on his style, shown under a "Style" subheading
+//  sections: titled sections, each { heading, body } shown under its heading
+//            — add another like { heading: "Media", body: "..." }
 //  email:    contact address
 
 export const artist = {
@@ -18,7 +19,17 @@ export const artist = {
     "In 2003 he was elected Chairman of Blackburn (Lancashire) Artists’ Society, a position he held for 14 years. Since 2007 until the present time he has produced an annual calendar of some of his paintings, which are mainly given to charities and others to family and friends.",
     "In 2017 he moved to Scotland where he became involved in local art groups and participated in many exhibitions and gained many awards.",
     "His work is in private collections throughout the U.K., France, Germany, The Netherlands and Switzerland as well as Canada and the U.S.A. Recently he completed a commission of five large paintings for a local health establishment.",
-    "Isam is influenced by impressionism, adding hard brush strokes. He has adopted that in his painting, concentrating on light and shade and developing it into his abstract paintings with the addition of the third dimension.",
+  ],
+  // Titled sections, each shown under its own heading. Add or remove freely.
+  sections: [
+    {
+      heading: "Style",
+      body: "Isam is influenced by impressionism, adding hard brush strokes. He has adopted that in his painting, concentrating on light and shade and developing it into his abstract paintings with the addition of the third dimension.",
+    },
+    {
+      heading: "Media",
+      body: "Isam uses oil paint in most of his landscapes and portraits but on occasion he uses watercolour and acrylic, sometimes using all three together, especially in large abstract paintings.",
+    },
   ],
   contactLabel:
     "Isam can be commissioned for Landscapes, Abstracts, Still Lifes, and House Portraits. He may be contacted through his email:",
