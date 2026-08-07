@@ -17,6 +17,218 @@
 
 export const artworks = [
   {
+    id: "2007-poinsettia",
+    title: "Poinsettia",
+    year: 2007,
+    image: "1. Paintings/2007 Poinsettia.JPG",
+    category: ["Impressionist", "Still Life"]
+  },
+  {
+    id: "2007-preston-new-road-blackburn",
+    title: "Preston New Road, Blackburn",
+    year: 2007,
+    image: "1. Paintings/2007 Preston New Road, Blackburn.JPG",
+    category: "Impressionist"
+  },
+  {
+    id: "2007-ribble-valley-landscape",
+    title: "Ribble Valley landscape",
+    year: 2007,
+    image: "1. Paintings/2007 Ribble Valley landscape.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2007-slaidburn",
+    title: "Slaidburn",
+    year: 2007,
+    image: "1. Paintings/2007 Slaidburn.jpg",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2007-summer-s-end",
+    title: "Summer's End",
+    year: 2007,
+    image: "1. Paintings/2007 Summer's End.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2008-downham-ribble-valley",
+    title: "Downham, Ribble Valley",
+    year: 2008,
+    image: "1. Paintings/2008 Downham, Ribble Valley.jpg",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2008-landfill",
+    title: "Landfill",
+    year: 2008,
+    image: "1. Paintings/2008 Landfill.JPG",
+    category: "Impressionist"
+  },
+  {
+    id: "2008-still-life-with-pomegranates",
+    title: "Still Life with pomegranates",
+    year: 2008,
+    image: "1. Paintings/2008 Still Life with pomegranates.JPG",
+    category: ["Impressionist", "Still Life"]
+  },
+  {
+    id: "2008-the-exhibition",
+    title: "The Exhibition",
+    year: 2008,
+    image: "1. Paintings/2008 The Exhibition.jpg",
+    category: "Impressionist"
+  },
+  {
+    id: "2010-blackburn-town-centre",
+    title: "Blackburn Town Centre",
+    year: 2010,
+    image: "1. Paintings/2010 Blackburn Town Centre.jpg",
+    category: ["Impressionist", "City"]
+  },
+  {
+    id: "2011-wild-horses",
+    title: "Wild Horses",
+    year: 2011,
+    image: "1. Paintings/2011 Wild Horses.JPG",
+    category: ["Impressionist", "Animals"]
+  },
+  {
+    id: "2011-winter-view",
+    title: "Winter View",
+    year: 2011,
+    image: "1. Paintings/2011 Winter View.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2012-autumn-tree",
+    title: "Autumn Tree",
+    year: 2012,
+    image: "1. Paintings/2012 Autumn Tree.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2012-landscape",
+    title: "Landscape",
+    year: 2012,
+    image: "1. Paintings/2012 Landscape.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2012-winter-road",
+    title: "Winter Road",
+    year: 2012,
+    image: "1. Paintings/2012 Winter Road.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2015-blackburn-market-2",
+    title: "Blackburn Market - 2",
+    year: 2015,
+    image: "1. Paintings/2015 Blackburn Market - 2.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "2015-blackburn-market",
+    title: "Blackburn Market",
+    year: 2015,
+    image: "1. Paintings/2015 Blackburn Market.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "2015-out-and-about-in-blackburn-market",
+    title: "Out and about in Blackburn Market",
+    year: 2015,
+    image: "1. Paintings/2015 Out and about in Blackburn Market.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "2015-rose",
+    title: "Rose",
+    year: 2015,
+    image: "1. Paintings/2015 Rose.jpg",
+    category: ["Impressionist", "Still Life"]
+  },
+  {
+    id: "2015-the-dining-table",
+    title: "The Dining Table",
+    year: 2015,
+    image: "1. Paintings/2015 The Dining Table.JPG",
+    category: ["Impressionist", "Still Life"]
+  },
+  {
+    id: "2020-the-lakeside",
+    title: "The Lakeside",
+    year: 2020,
+    image: "1. Paintings/2020 The Lakeside.jpeg",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2025-flower-arrangement",
+    title: "Flower arrangement",
+    year: 2025,
+    image: "1. Paintings/2025 Flower arrangement.jpg",
+    category: ["Impressionist", "Still Life"]
+  },
+  {
+    id: "2025-ottoberg-marstetten-switzerland",
+    title: "Ottoberg, Marstetten, Switzerland",
+    year: 2025,
+    image: "1. Paintings/2025 Ottoberg, Marstetten, Switzerland.jpg",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2025-receding-storm",
+    title: "Receding Storm",
+    year: 2025,
+    image: "1. Paintings/2025 Receding Storm.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2025-the-beginning-of-winter",
+    title: "The beginning of winter",
+    year: 2025,
+    image: "1. Paintings/2025 The beginning of winter.JPG",
+    category: ["Impressionist", "Landscape"]
+
+  },
+  {
+    id: "Maheen",
+    title: "Maheen",
+    year: 1966,
+    image: "1. Paintings/1965 'Meheen'.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "Rakan",
+    title: "Rakan",
+    year: 1966,
+    image: "1. Paintings/1966 'Rakan'.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "Fareed",
+    title: "Fareed",
+    year: 1966,
+    image: "1. Paintings/1966 Fareed.JPG",
+    category: ["Impressionist", "Portrait"]
+  },
+  {
+    id: "2007 Landscape",
+    title: "Landscape",
+    year: 2007,
+    image: "1. Paintings/2007 Landscape.jpg",
+    category: ["Impressionist", "Landscape"]
+  },
+  {
+    id: "2007 Pendle Hill in Autumn",
+    title: "Pendle Hill in Autumn",
+    year: 2007,
+    image: "1. Paintings/2007 Pendle Hill in Autumn.JPG",
+    category: ["Impressionist", "Landscape"]
+  },
+
+  {
     id: "SawleyBesideTheChurchHall",
     title: "Sawley Beside The Church Hall",
     year: 2010,
@@ -1210,7 +1422,7 @@ export const artworks = [
     title: "Valley Cottage",
     year: 2019,
     image: "1. Paintings/2019 Valley Cottage.jpg",
-    category: ["Impressionist", "House"],
+    category: ["Impressionist", "Landscape"],
   },
   {
     id: "2020-bridgeness-tower",
@@ -1403,7 +1615,7 @@ export const artworks = [
   },
   {
     id: "2021-summer-s-end",
-    title: "Summer's End",
+    title: "Blue Vase",
     year: 2021,
     image: "1. Paintings/2021 Summer's End.JPG",
     category: ["Impressionist", "Still Life"],
